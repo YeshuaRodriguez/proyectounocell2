@@ -28,26 +28,11 @@
         <h1 class="mas">Nuestros servicios:</h1>
 
         <section class="nscontainer">
-        
-            
-            <div class="highlights">
-                <div class="highlight" onmouseover="jump(event)" onmouseout="resetJump()">
-                    <h3>Últimos Celulares</h3>
-                    <p>Explora los modelos más recientes y avanzados en el mercado.</p>
-                    <img src="https://cdn-icons-png.flaticon.com/256/0/191.png" alt="">
-                </div>
-                <div class="highlight" onmouseover="jump(event)" onmouseout="resetJump()">
-                    <h3>Accesorios</h3>
-                    <p>Encuentra los mejores accesorios para tu dispositivo.</p>
-                    <img src="https://cdn-icons-png.flaticon.com/256/3205/3205414.png" alt="">
-                </div>
-                <div class="highlight" onmouseover="jump(event)" onmouseout="resetJump()">
-                    <h3>Reparaciones</h3>
-                    <p>Ofrecemos servicios de reparación para celulares, televisores y otros dispositivos, incluyendo estufas.</p>
-                    <img src="https://cdn-icons-png.flaticon.com/256/675/675507.png" alt="">
-                </div>
-            </div>
+            {{> imgGallery
+                imageCollection=indexServices
+            }}
         </section>
+        
 
         <hr>
 
