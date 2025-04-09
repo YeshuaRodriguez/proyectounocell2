@@ -17,7 +17,7 @@ const commonData = {
 export const getPageContext = (pagePath) => {
     let pageData = {};
     switch (pagePath){
-        case '../index.html':
+        case '/index.html':
             pageData = indexPage
             break;
     }
