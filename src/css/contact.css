@@ -1,0 +1,260 @@
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    margin: 0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #171731;
+    color: #fff;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background: #171731; /* Color de fondo del nav */
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: light;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #303064;
+    border-radius: 5px;
+}
+
+/* Estilos del Dropdown */
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #171731;
+    min-width: 180px;
+    padding: 5px 0;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+nav ul li .dropdown li {
+    margin: 0;
+}
+
+nav ul li .dropdown a {
+    color: #fff;
+    padding: 10px;
+    display: block;
+    transition: background 0.3s;
+    font-weight: light;
+}
+
+nav ul li .dropdown a:hover {
+    background: #414187;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+
+body {
+    color: #171731;
+}
+
+section {
+    padding: 50px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: #303064;
+}
+
+section p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #171731;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+form label {
+    font-size: 1rem;
+    color: #303064;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 1em 2em;
+    background-color: #171731;
+    border: none;
+    color: #fff;
+    border-radius: 1000px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+form button:hover {
+    z-index: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: #292953;
+
+
+}
+
+.buttons-section {
+    display: grid;
+    grid-template-columns: repeat(2, 300px); /* Dos columnas de 300px */
+    grid-template-rows: repeat(2, 300px); /* Dos filas de 300px */
+    gap: 20px; /* Espaciado entre elementos */
+    place-content: center; /* Centra el grid en el contenedor */
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.buttons-section button {
+    width: 100%; /* Ajusta al tamaño del grid */
+    height: 100%; /* Ajusta al tamaño del grid */
+    background-color: black;
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.buttons-section button::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.buttons-section button:hover::after {
+    opacity: 1;
+}
+
+.buttons-section .btn1:hover {
+    z-index: 0;
+    box-shadow: -10px -10px 40px rgba(255, 0, 187, 0.589), 10px 10px 40px rgba(255, 174, 0, 0.564);
+}
+
+.buttons-section .btn2:hover {
+    z-index: 0;
+    box-shadow: -10px -10px 40px rgba(0, 242, 255, 0.589), 10px 10px 40px rgba(255, 0, 136, 0.564);
+}
+
+.buttons-section .btn3:hover {
+    z-index: 0;
+    box-shadow: -10px -10px 40px rgba(43, 0, 255, 0.589), 10px 10px 40px rgba(0, 47, 255, 0.564);
+}
+
+.buttons-section .btn4:hover {
+    z-index: 0;
+    box-shadow: -10px -10px 40px rgba(0, 255, 72, 0.589), 10px 10px 40px rgba(0, 255, 136, 0.564);
+}
+
+
+.buttons-section .btn1::after {
+    background-image: linear-gradient(to bottom right, #e600ff, #ffb300);
+}
+
+.buttons-section .btn2::after {
+    background-image: linear-gradient(to bottom right, #00eaff, #ff005d);
+}
+
+.buttons-section .btn3::after {
+    background-image: linear-gradient(to bottom right, #192677, #5732bb);
+}
+
+.buttons-section .btn4::after {
+    background-image: linear-gradient(to bottom right, #52f678, #32bb96);
+}
+
+.buttons-section button img {
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: cover;
+    z-index: 1;
+    justify-items: center;
+    filter: invert(100%);
+}
+
+footer {
+    background-color: #171731;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}

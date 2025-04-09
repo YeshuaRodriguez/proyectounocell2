@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inicio - Tienda de Celulares y más">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="javascript/salto.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="Logo de UNOCELL">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                
+                <li>
+                    <a href="#">Información</a>
+                    <ul class="dropdown">
+                        <li><a href="html/about.html">Acerca de Nosotros</a></li>
+                        <li><a href="html/faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+        
+                <li>
+                    <a href="#">Nuestros Productos</a>
+                    <ul class="dropdown">
+                        <li><a href="html/programs.html">Ver Todos</a></li>
+                        <li><a href="html/events.html">Ofertas</a></li>
+                    </ul>
+                </li>
+        
+                <li>
+                    <a href="#">Soporte</a>
+                    <ul class="dropdown">
+                        <li><a href="html/help.html">Cómo Comprar</a></li>
+                        <li><a href="html/contact.html">Contáctenos</a></li>
+                    </ul>
+                </li>
+        
+                <li><a href="html/gallery.html">Galería de Fotos</a></li>
+                <li><a href="html/blog.html">Blog</a></li>
+                <li><a href="html/donations.html">Donaciones</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="hero">
+            <img src="https://www.nmas.com.mx/_next/image/?url=https%3A%2F%2Fstatic-live.nmas.com.mx%2Fnmas-news%2Fstyles%2Fcorte_16_9%2Fcloud-storage%2F2024-02%2Fatt-red-apagon-estados-unidos.jpg%3Fh%3D920929c4%26itok%3Dmxz3jUiY&w=1920&q=80" alt="cel">
+            <span class="hero-content">
+                <h2>Bienvenidos a UNOCELL</h2>
+                <p>Descubre los mejores teléfonos móviles, accesorios, televisores, y más. <br> Ofrecemos servicios de reparación para una amplia gama de dispositivos.</p>
+            </span>
+
+        </section>
+
+        <h1 class="mas">Nuestros servicios:</h1>
+
+        <section class="nscontainer">
+        
+            
+            <div class="highlights">
+                <div class="highlight" onmouseover="jump(event)" onmouseout="resetJump()">
+                    <h3>Últimos Celulares</h3>
+                    <p>Explora los modelos más recientes y avanzados en el mercado.</p>
+                    <img src="https://cdn-icons-png.flaticon.com/256/0/191.png" alt="">
+                </div>
+                <div class="highlight" onmouseover="jump(event)" onmouseout="resetJump()">
+                    <h3>Accesorios</h3>
+                    <p>Encuentra los mejores accesorios para tu dispositivo.</p>
+                    <img src="https://cdn-icons-png.flaticon.com/256/3205/3205414.png" alt="">
+                </div>
+                <div class="highlight" onmouseover="jump(event)" onmouseout="resetJump()">
+                    <h3>Reparaciones</h3>
+                    <p>Ofrecemos servicios de reparación para celulares, televisores y otros dispositivos, incluyendo estufas.</p>
+                    <img src="https://cdn-icons-png.flaticon.com/256/675/675507.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <h1 class="mas">Más Opciones:</h1>
+
+        <section class="btns-container">
+            <div class="botones">
+                <a href="about.html"><button class="boton boton1">Acerca de Nosotros</button></a>
+                <a href="programs.html"><button class="boton boton2">Nuestros Productos</button></a>
+                <a href="help.html"><button class="boton boton3">Cómo Comprar</button></a>
+                <a href="gallery.html"><button class="boton boton4">Galería</button></a>
+                <a href="blog.html"><button class="boton boton5">Blog</button></a>
+                <a href="events.html"><button class="boton boton6">Ofertas</button></a>
+                <a href="contact.html"><button class="boton boton7">Contacto</button></a>
+                <a href="donations.html"><button class="boton boton8">Donaciones</button></a>
+                <a href="faq.html"><button class="boton boton9">FAQ</button></a>
+            </div>
+        </section>
+        
+        <h1>Redes Sociales:</h1>
+        <section class="buttons-section">
+            <a href="https://www.instagram.com/unocellreparaciones/"><button class="btn1" onclick="incrementClick('counter1')"><img src="src/images/87390.png" alt="Botón 1"></button></a>
+            <a href="https://www.tiktok.com/@unocell.oficial"><button class="btn2" onclick="incrementClick('counter2')"><img src="src/images/1946552.png" alt="Botón 2"></button></a>
+            <a href="https://www.facebook.com/p/Unocell-Hn-100063587169622/"><button class="btn3" onclick="incrementClick('counter3')"><img src="src/images/59439.png" alt="Botón 3"></button></a>
+            <a href="../html/index.html"><button class="btn4" onclick="incrementClick('counter4')"><img src="src/images/1006771.png" alt="Botón 4"></button></a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 UNOCELL. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
