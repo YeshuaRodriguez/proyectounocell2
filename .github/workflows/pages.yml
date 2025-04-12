@@ -1,14 +1,14 @@
-name: Deploy a Pages de Github
+name: Portafolio a Github Pages utilizando LESS y Vite
 
-on:
+on: 
   push:
     branches: ["main"]
   workflow_dispatch:
-permissions:
+permissions: 
   contents: read
   pages: write
   id-token: write
-env:
+env: 
   DEPLOY_BASE_URL: ${{ vars.DEPLOY_BASE_URL}}
 concurrency:
   group: "pages"
@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   deploy:
-    environment:
+    environment: 
       name: github-pages
       url: ${{ steps.github_pages.outputs.url }}
     runs-on: ubuntu-latest
@@ -35,9 +35,9 @@ jobs:
         run: echo "DEPLOY_BASE_URL -> $DEPLOY_BASE_URL"
       - name: Compilar el Sitio
         run: npm run build
-      - name: Configurar Entorno Github Pages
+      - name: Configurar Entorno de Github Pages
         uses: actions/configure-pages@v5
-      - name: Upload del Sitio Compilado
+      - name: Upload de Sitio Compilado
         uses: actions/upload-pages-artifact@v3
         with:
           path: './dist'
