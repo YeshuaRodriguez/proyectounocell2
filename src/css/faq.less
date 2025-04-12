@@ -14,23 +14,24 @@
     margin: 150px;
     margin-right: 300px;
     margin-left: 300px;
-}
+    h2{
 
-.faq-highlight h2 {
-    text-align: center;
+            text-align: center;
     color: @contenido;
     font-size: 2.5rem;
     padding: 30px;
     margin-bottom: 50px;
     margin-top: 0;
     transition: 0.3s ease-in-out;
-}
-
-.faq-highlight h2:hover {
-
-    color: @contenido-blanco;
+        
+    &:hover
+    {
+            color: @contenido-blanco;
     transform: scale(1.2);
+    }
 
+    }
+    
 }
 
 
@@ -39,35 +40,38 @@
     margin-bottom: 20px;
     border-radius: 10px;
     transition: 0.3s ease-in-out;
-}
-
-.faq-item:hover {
-    
-    background-color: @principal-hover;
+    &:hover{
+            background-color: @principal-hover;
     transform: scale(1.2);
 
-}
+    }
+    h3{
 
-.faq-item h3 {
-    margin-bottom: 10px;
+            margin-bottom: 10px;
     color: @contenido;
     padding: 10px;
     margin-bottom: 0;
-}
 
-.faq-item p {
-    font-size: 1rem;
+    }
+
+    p{
+
+            font-size: 1rem;
     color: @contenido-blanco;
     padding: 10px;
     margin-top: 0;
-}
+    padding-bottom: 20px;
 
-.faq-item a {
-    color: @contenido;
+    }
+
+    a{
+
+            color: @contenido;
     text-decoration: underline;
     transition: 0.2s ease-in-out;
-}
 
-.faq-item a:hover {
-    color: @contenido-hover;
+    &:hover{
+        color: @contenido-hover;
+    }
+    }
 }
