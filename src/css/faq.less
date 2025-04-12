@@ -1,103 +1,11 @@
-@import "paleta.less";
-
-* {
-    font-family: "Poppins", sans-serif;
-}
-
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: @principal;
-}
-
-main {
+.faqMain {
     flex: 1;
     justify-content: center;
     align-items: center;
 }
 
-header {
-    margin: 0;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: @nav;
-    color: @contenido-blanco;
-}
 
-.logo img {
-    max-height: 50px;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    background: @nav;
-}
-
-nav ul li {
-    position: relative;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: @contenido;
-    text-decoration: none;
-    font-weight: light;
-    padding: 10px;
-    display: block;
-    transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover,
-nav ul li a:focus {
-    background-color: @principal;
-    border-radius: 5px;
-}
-
-nav ul li .dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #171731;
-    min-width: 180px;
-    padding: 5px 0;
-    border-radius: 5px;
-    z-index: 100;
-}
-
-nav ul li .dropdown li {
-    margin: 0;
-}
-
-nav ul li .dropdown a {
-    color: #fff;
-    padding: 10px;
-    display: block;
-    transition: background 0.3s;
-    font-weight: light;
-}
-
-nav ul li .dropdown a:hover {
-    background: #414187;
-}
-
-nav ul li:hover .dropdown {
-    display: block;
-}
-
-body {
-    color: @principal;
-}
-
-section {
+.faq-highlight {
     padding: 50px;
     margin: 20px;
     border-radius: 20px;
@@ -108,7 +16,7 @@ section {
     margin-left: 300px;
 }
 
-section h2 {
+.faq-highlight h2 {
     text-align: center;
     color: @contenido;
     font-size: 2.5rem;
@@ -118,7 +26,7 @@ section h2 {
     transition: 0.3s ease-in-out;
 }
 
-section h2:hover {
+.faq-highlight h2:hover {
 
     color: @contenido-blanco;
     transform: scale(1.2);
@@ -162,11 +70,4 @@ section h2:hover {
 
 .faq-item a:hover {
     color: @contenido-hover;
-}
-
-footer {
-    background-color: @background-footer;
-    color: @contenido;
-    text-align: center;
-    padding: 20px 0;
 }
