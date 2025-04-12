@@ -1,101 +1,11 @@
-* {
-    font-family: "Poppins", sans-serif;
-    box-sizing: border-box;
-    text-decoration: none;
-}
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
 
 main {
     flex: 1;
 }
 
-header {
-    margin: 0;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #171731;
-    color: #fff;
-}
 
-.logo img {
-    max-height: 50px;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    background: #171731;
-}
-
-nav ul li {
-    position: relative;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: light;
-    padding: 10px;
-    display: block;
-    transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover,
-nav ul li a:focus {
-    background-color: #303064;
-    border-radius: 5px;
-}
-
-
-nav ul li .dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #171731;
-    min-width: 180px;
-    padding: 5px 0;
-    border-radius: 5px;
-    z-index: 100;
-}
-
-nav ul li .dropdown li {
-    margin: 0;
-}
-
-nav ul li .dropdown a {
-    color: #fff;
-    padding: 10px;
-    display: block;
-    transition: background 0.3s;
-    font-weight: light;
-}
-
-nav ul li .dropdown a:hover {
-    background: #414187;
-}
-
-nav ul li:hover .dropdown {
-    display: block;
-}
-
-body {
-    color: #171731;
-}
-
-section {
+.events-section {
     padding: 50px;
     margin: 20px auto;
     border-radius: 20px;
@@ -105,28 +15,28 @@ section {
     z-index: 1;
     width: 1200px;
 }
-section h2 {
+.events-section h2 {
     text-align: center;
     margin-bottom: 1rem;
     font-size: 2.5rem;
     color: #303064;
 }
 
-section p {
+.events-section p {
     text-align: center;
     font-size: 1.2rem;
     margin-bottom: 2rem;
     color: #171731;
 }
 
-.offers {
+.events-offers {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 
-.offers img {
+.events-offers img {
     width: 100%;
     max-width: 250px;
     height: auto;
@@ -135,12 +45,12 @@ section p {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.hue-rotate {
+.events-hue-rotate {
     filter: hue-rotate(120deg);
     margin: 50px;
 }
 
-.offer-items {
+.events-offer-items {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
@@ -148,7 +58,7 @@ section p {
     max-width: 800px;
 }
 
-.offer-item {
+.events-offer-item {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -157,30 +67,23 @@ section p {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.offer-item h3 {
+.events-offer-item h3 {
     margin-top: 0;
     font-size: 1.8rem;
     color: #303064;
 }
 
-.offer-item p {
+.events-offer-item p {
     font-size: 1.2rem;
     color: #171731;
 }
 
-.offer-item:hover {
+.events-offer-item:hover {
     transform: scale(1.05);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
-footer {
-    background-color: #171731;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.ver {
+.events-ver {
     background-color: #1c572a;
     color: #fff;
     border: none;
@@ -199,13 +102,13 @@ footer {
     text-decoration: none;
 }
 
-.ver a{
+.events-ver a{
 
     color: white;
 
 }
 
-button:hover{
+.events-ver:hover{
 
     background-color: #171831;
     transform: scale(1.05);
