@@ -6,6 +6,7 @@
     <meta name="description" content="Blog - UNOCELL">
     <title>Blog</title>
     <link rel="stylesheet" href="src/css/main.less">
+    <script src="src/javascript/form.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -16,6 +17,18 @@
         <section class="blog-section">
             <h2>Blog</h2>
             <p>Lee nuestros últimos artículos y noticias sobre tecnología, consejos y más.</p>
+            <button class="info-toggle-btn" onclick="toggleContent()">+</button>
+            <section id="extraContent" style="display:none;" class="nuevoformulario">
+                <label for="Titulo">Titulo</label>
+                
+                <input type="text" id="idTitulo" name="titulo" required>
+                
+                <label for="Articulo">Articulo</label>
+                
+                <textarea id="idArticulo" name="articulo" required></textarea>
+                
+                <button type="submit" class="btnSubmit">Enviar</button>
+            </section>
             <article class="blog-post">
                 <h3>Título del Artículo 1</h3>
                 <p>Fecha de publicación: 01/01/2024</p>
