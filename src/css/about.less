@@ -1,105 +1,7 @@
-@import "paleta.less";
-
-*{
-
-    font-family: "Montserrat", sans-serif;
-
-}
-
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: @principal;
-}
-
 main {
     flex: 1;
 }
 
-header {
-    margin: 0px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: @nav;
-    color: #fff;
-}
-
-.logo img {
-    max-height: 50px;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    background: @nav;
-}
-
-nav ul li {
-    position: relative;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: @contenido;
-    text-decoration: none;
-    font-weight: light;
-    padding: 10px;
-    display: block;
-    transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover,
-nav ul li a:focus {
-    background-color: @principal-hover;
-    border-radius: 5px;
-}
-
-
-nav ul li .dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #171731;
-    min-width: 180px;
-    padding: 5px 0;
-    border-radius: 5px;
-    z-index: 100;
-}
-
-nav ul li .dropdown li {
-    margin: 0;
-}
-
-nav ul li .dropdown a {
-    color: #fff;
-    padding: 10px;
-    display: block;
-    transition: background 0.3s;
-    font-weight: light;
-}
-
-nav ul li .dropdown a:hover {
-    background: #414187;
-}
-
-nav ul li:hover .dropdown {
-    display: block;
-}
-
-
-body {
-    margin: 0;
-    padding: 0;
-}
 
 .cont {
     background-color: @highlight-background;
@@ -165,29 +67,14 @@ body {
 }
 
 
-footer {
-    background-color: @background-footer;
-    color: @contenido;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px 0;
-}
 
-footer p {
-    margin: 0;
-    padding: 20px 50px;
-}
-
-.highlights {
+.aboutHighlights {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
-.highlight {
+.aboutHighlight {
     text-align: center;
     margin: 0 10px;
     padding: 20px;
@@ -197,7 +84,7 @@ footer p {
     margin-bottom: 100px;
 }
 
-.highlight:hover, .highlight:focus {
+.aboutHighlight:hover, .aboutHighlight:focus {
 
     transition: 0.5s;
     background-color: @principal;

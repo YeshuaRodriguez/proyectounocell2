@@ -1,0 +1,81 @@
+.media-buttons-section {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(2, 300px);
+    gap: 20px;
+    place-content: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    button {
+        width: 100%;
+        height: 100%;
+        background-color: @boton-redes;
+        border: none;
+        color: @contenido;
+        border-radius: 30px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        &::after {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            z-index: -1;
+            transition: opacity 0.3s ease;
+            opacity: 0;
+        }
+        &:hover::after {
+            opacity: 1;
+        }
+        img {
+            max-width: 50%;
+            max-height: 50%;
+            object-fit: cover;
+            z-index: 1;
+            justify-items: center;
+            filter: invert(100%);
+        }
+    }
+    .media-btn1{
+        &:hover {
+            z-index: 0;
+            box-shadow: -10px -10px 40px @instagram-shadow;
+        }
+        &::after {
+            background-image: @instagram-btn;
+        }
+    }
+    .media-btn2{
+        &:hover {
+            z-index: 0;
+            box-shadow: -10px -10px 40px @tiktok-shadow;
+        }
+        &::after {
+            background-image: @tiktok-btn;
+        }
+    }
+    .media-btn3{
+        &:hover {
+            z-index: 0;
+            box-shadow: -10px -10px 40px @facebook-shadow;
+        }
+        &::after {
+            background-image: @facebook-btn;
+        }
+    }
+    .media-btn4{
+        &:hover {
+            z-index: 0;
+            box-shadow: -10px -10px 40px @web-shadow;
+        }
+        &::after {
+            background-image: @web-btn;
+        }
+    }
+}

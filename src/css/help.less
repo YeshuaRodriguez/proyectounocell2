@@ -17,87 +17,13 @@ main {
     flex: 1;
 }
 
-header {
-    margin: 0px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: @nav;
-    color: @contenido;
-}
-
-.logo img {
-    max-height: 50px;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    background: @nav;
-}
-
-nav ul li {
-    position: relative;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: @contenido;
-    text-decoration: none;
-    font-weight: light;
-    padding: 10px;
-    display: block;
-    transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover,
-nav ul li a:focus {
-    background-color: @principal-hover;
-    border-radius: 5px;
-}
-
-nav ul li .dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #171731;
-    min-width: 180px;
-    padding: 5px 0;
-    border-radius: 5px;
-    z-index: 100;
-}
-
-nav ul li .dropdown li {
-    margin: 0;
-}
-
-nav ul li .dropdown a {
-    color: #fff;
-    padding: 10px;
-    display: block;
-    transition: background 0.3s;
-    font-weight: light;
-}
-
-nav ul li .dropdown a:hover {
-    background: #414187;
-}
-
-nav ul li:hover .dropdown {
-    display: block;
-}
 
 body {
     margin: 0;
     padding: 0;
 }
 
-section {
+.helpSection {
     padding: 50px;
     margin: 100px 20px;
     border-radius: 20px;
@@ -106,7 +32,7 @@ section {
     z-index: 1;
 }
 
-section h1 {
+.helpSection h1 {
     position: relative;
     text-align: center;
     margin-bottom: 1rem;
@@ -114,41 +40,41 @@ section h1 {
     font-size: 2.5rem;
 }
 
-section p,
-section ol {
+.helpSection p,
+.helpSection ol {
     margin: 20px auto;
     text-align: center;
     font-size: 1rem;
     color: @contenido-blanco
 }
 
-section ol {
+.helpSection ol {
     padding-left: 0;
     list-style-position: inside;
     max-width: 400px;
     text-align: left;
 }
 
-section ol li {
+.helpSection ol li {
     margin-top: 5px;
     margin-bottom: 10px;
     font-size: 1em;
     color: @contenido-blanco;
 }
 
-section ol li::marker {
+.helpSection ol li::marker {
     font-size: 1.5em;
     font-weight: bold;
     color: @contenido;
 }
 
-section ol li a {
+.helpSection ol li a {
 
     color: @contenido;
 
 }
 
-section ol li a:hover {
+.helpSection ol li a:hover {
 
     color: @contenido-hover;
 
@@ -177,22 +103,4 @@ button:hover {
     border-radius: 5px;
     color: @form-button-hover;
 
-}
-
-
-footer {
-    background-color: @background-footer;
-    color: @contenido-blanco;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px 0;
-}
-
-footer p {
-    margin: 0;
-    padding: 20px 50px;
-    color: @contenido;
 }
