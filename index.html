@@ -19,14 +19,7 @@
     {{> header}}
     <main>
 
-        <section class="hero">
-            <img src="https://www.ei-ie.org/image/HYVVqSOCVkJSnMq0siertQ5plbjEIkK1BqjUP6qi.jpg/lead.jpg" alt="cel">
-            <span class="hero-content">
-                <h2>Unocell Por La Educación</h2>
-                <p>Campaña solidaria que recibe donaciones de celulares para entregarlos <br> a niños que los necesitan, ayudándolos a acceder a la educación digital.</p>
-            </span>
-
-        </section>
+        {{> hero}}
 
         <h1 class="mas">Nuestra Misión y Visión:</h1>
 
@@ -41,29 +34,24 @@
 
         <h1 class="mas">Más de Unocell:</h1>
 
-        <section class="btns-container">
-            <div class="botones">
-                <a href="about.html"><button class="boton boton1">Acerca de Nosotros</button></a>
-                <a href="programs.html"><button class="boton boton2">Nuestros Productos</button></a>
-                <a href="help.html"><button class="boton boton3">Cómo Comprar</button></a>
-                <a href="gallery.html"><button class="boton boton4">Galería</button></a>
-                <a href="blog.html"><button class="boton boton5">Blog</button></a>
-                <a href="events.html"><button class="boton boton6">Ofertas</button></a>
-                <a href="contact.html"><button class="boton boton7">Contacto</button></a>
-                <a href="donations.html"><button class="boton boton8">Donaciones</button></a>
-                <a href="faq.html"><button class="boton boton9">FAQ</button></a>
+        <section class="servicios-btns-container">
+            <div class="servicios-botones">
+                <a href="about.html"><button class="servicios-boton servicios-boton1">Acerca de Nosotros</button></a>
+                <a href="programs.html"><button class="servicios-boton servicios-boton2">Nuestros Productos</button></a>
+                <a href="help.html"><button class="servicios-boton servicios-boton3">Cómo Comprar</button></a>
+                <a href="gallery.html"><button class="servicios-boton servicios-boton4">Galería</button></a>
+                <a href="blog.html"><button class="servicios-boton servicios-boton5">Blog</button></a>
+                <a href="events.html"><button class="servicios-boton servicios-boton6">Ofertas</button></a>
+                <a href="contact.html"><button class="servicios-boton servicios-boton7">Contacto</button></a>
+                <a href="donations.html"><button class="servicios-boton servicios-boton8">Donaciones</button></a>
+                <a href="faq.html"><button class="servicios-boton servicios-boton9">FAQ</button></a>
             </div>
         </section>
 
         <hr>
         
         <h1>Redes Sociales:</h1>
-        <section class="media-buttons-section">
-            <a href="https://www.instagram.com/unocellreparaciones/"><button class="media-btn1" onclick="incrementClick('counter1')"><img src="src/images/87390.png" alt="Botón 1"></button></a>
-            <a href="https://www.tiktok.com/@unocell.oficial"><button class="media-btn2" onclick="incrementClick('counter2')"><img src="src/images/1946552.png" alt="Botón 2"></button></a>
-            <a href="https://www.facebook.com/p/Unocell-Hn-100063587169622/"><button class="media-btn3" onclick="incrementClick('counter3')"><img src="src/images/59439.png" alt="Botón 3"></button></a>
-            <a href="../html/index.html"><button class="media-btn4" onclick="incrementClick('counter4')"><img src="src/images/1006771.png" alt="Botón 4"></button></a>
-        </section>
+        {{> redes}}
     </main>
     {{> footer}}
 </body>
