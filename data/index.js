@@ -7,10 +7,10 @@ const commonData = {
         { url: '/about.html', label: 'Acerca de Nosotros' },
         { url: '/contact.html', label: 'Contáctanos' },
         { url: '/donations.html', label: 'Donaciones' },
-        { url: '/events.html', label: 'Eventos'},
+        { url: '/events.html', label: 'Beneficios'},
         { url: '/faq.html', label: 'FAQ' },
-        { url: '/gallery.html', label: 'Galería' },
-        { url: '/help.html', label: 'Ayuda' },
+        { url: '/gallery.html', label: 'Localizaciones' },
+        { url: '/help.html', label: 'Como Donar' },
         { url: '/programs.html', label: 'Programas' },
         { url: '/blog.html', label: 'Blog' },
     ]

@@ -9,41 +9,46 @@ main {
     padding: 50px;
     margin: 20px auto;
     border-radius: 20px;
-    background-color: #ffffff;
+    background-color: @highlight-background;
     position: relative;
     overflow: hidden;
     z-index: 1;
     width: 1200px;
-}
-.events-section h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
-    color: #303064;
+    h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        color: @contenido;
+    }
+
 }
 
-.events-section p {
+.descripcionBeneficios {
     text-align: center;
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    color: #171731;
+    color: @contenido-blanco;
+    margin-left: 100px;
+    margin-right: 100px;
 }
+
 
 .events-offers {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 }
 
-.events-offers img {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+
 
 .events-hue-rotate {
     filter: hue-rotate(120deg);
@@ -59,36 +64,33 @@ main {
 }
 
 .events-offer-item {
-    background-color: #fff;
+    background-color: @highlight-descuentos;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.events-offer-item h3 {
-    margin-top: 0;
-    font-size: 1.8rem;
-    color: #303064;
-}
-
-.events-offer-item p {
-    font-size: 1.2rem;
-    color: #171731;
-}
-
-.events-offer-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    h3 {
+        margin-top: 0;
+        font-size: 1.8rem;
+        color: @contenido-blanco;
+    }
+    p {
+        font-size: 1.2rem;
+        color: @contenido-blanco;
+    }
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
 }
 
 .events-ver {
-    background-color: #1c572a;
+    background-color: @btn-ver-productos;
     color: #fff;
     border: none;
     padding: 50px;
-    width: 45%;
+    width: 100%;
     box-sizing: border-box;
     font-size: 1.2rem;
     cursor: pointer;
@@ -100,17 +102,15 @@ main {
     border-radius: 20px;
     transition: transform 0.5s ease, background-color 0.5s ease;
     text-decoration: none;
-}
+    a{
 
-.events-ver a{
+        color: white;
+    
+    }
+    &:hover{
 
-    color: white;
-
-}
-
-.events-ver:hover{
-
-    background-color: #171831;
-    transform: scale(1.05);
-
-}
+        background-color: @btn-ver-productos-hover;
+        transform: scale(1.05);
+    
+    }
+} 
