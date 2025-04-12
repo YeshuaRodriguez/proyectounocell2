@@ -10,7 +10,7 @@ const commonData = {
         { url: '/events.html', label: 'Beneficios'},
         { url: '/faq.html', label: 'FAQ' },
         { url: '/gallery.html', label: 'Localizaciones' },
-        { url: '/help.html', label: 'Como Donar' },
+        { url: '/help.html', label: 'Cómo Donar' },
         { url: '/programs.html', label: 'Programas' },
         { url: '/blog.html', label: 'Blog' },
     ]
