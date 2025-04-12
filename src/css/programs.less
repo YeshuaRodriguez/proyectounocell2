@@ -1,0 +1,98 @@
+main {
+    flex: 1;
+}
+
+.programs-section {
+    padding: 50px;
+    margin: 20px auto;
+    border-radius: 20px;
+    background-color: @highlight-background;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 1200px;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        color: @contenido;
+    }
+}
+
+.programasdescripcion {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: @contenido-blanco;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.programs-offers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.programs-offer-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.programs-offer-item {
+    background-color: @highlight-descuentos;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    h3 {
+        margin-top: 0;
+        font-size: 1.8rem;
+        color: @contenido-blanco;
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: @contenido-blanco;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.events-ver {
+    background-color: @btn-ver-productos;
+    color: #fff;
+    border: none;
+    padding: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    background-image: url('https://www.nmas.com.mx/_next/image/?url=https%3A%2F%2Fstatic-live.nmas.com.mx%2Fnmas-news%2Fstyles%2Fcorte_16_9%2Fcloud-storage%2F2024-02%2Fatt-red-apagon-estados-unidos.jpg%3Fh%3D920929c4%26itok%3Dmxz3jUiY&w=1920&q=80');
+    background-blend-mode: multiply;
+    background-size: 900px;
+    border-radius: 20px;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+    text-decoration: none;
+
+    p {
+        color: white;
+    }
+
+    &:hover {
+        background-color: #171831;
+        transform: scale(1.05);
+    }
+}
