@@ -1,3 +1,5 @@
+@import "paleta.less";
+
 * {
     font-family: "Poppins", sans-serif;
 }
@@ -8,6 +10,7 @@ html, body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    background-color: @principal;
 }
 
 main {
@@ -21,8 +24,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #171731;
-    color: #fff;
+    background-color: @nav;
+    color: @contenido;
 }
 
 .logo img {
@@ -34,7 +37,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    background: #171731;
+    background: @nav;
 }
 
 nav ul li {
@@ -43,7 +46,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: @contenido;
     text-decoration: none;
     font-weight: light;
     padding: 10px;
@@ -53,7 +56,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a:focus {
-    background-color: #303064;
+    background-color: @principal-hover;
     border-radius: 5px;
 }
 
@@ -92,7 +95,6 @@ nav ul li:hover .dropdown {
 body {
     margin: 0;
     padding: 0;
-    color: #171731;
 }
 
 section {
@@ -108,13 +110,16 @@ section h1 {
     position: relative;
     text-align: center;
     margin-bottom: 1rem;
+    color: @contenido;
+    font-size: 2.5rem;
 }
 
 section p,
 section ol {
     margin: 20px auto;
     text-align: center;
-    font-size: 1em;
+    font-size: 1rem;
+    color: @contenido-blanco
 }
 
 section ol {
@@ -128,13 +133,25 @@ section ol li {
     margin-top: 5px;
     margin-bottom: 10px;
     font-size: 1em;
-    color: #171731;
+    color: @contenido-blanco;
 }
 
 section ol li::marker {
     font-size: 1.5em;
     font-weight: bold;
-    color: #171731;
+    color: @contenido;
+}
+
+section ol li a {
+
+    color: @contenido;
+
+}
+
+section ol li a:hover {
+
+    color: @contenido-hover;
+
 }
 
 
@@ -148,7 +165,7 @@ section ol li::marker {
     text-align: center;
     margin: 0 10px;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: @form-button;
     border-radius: 5px;
     font-weight: bold;
 }
@@ -158,14 +175,14 @@ button:hover {
     transition: 0.5s;
     background-color: #171731;
     border-radius: 5px;
-    color: #fff;
+    color: @form-button-hover;
 
 }
 
 
 footer {
-    background-color: #171731;
-    color: #fff;
+    background-color: @background-footer;
+    color: @contenido-blanco;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -177,4 +194,5 @@ footer {
 footer p {
     margin: 0;
     padding: 20px 50px;
+    color: @contenido;
 }

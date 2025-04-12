@@ -1,6 +1,8 @@
+@import "paleta.less";
+
 *{
 
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
 
 }
 
@@ -10,6 +12,7 @@ html, body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    background-color: @principal;
 }
 
 main {
@@ -23,7 +26,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #171731;
+    background-color: @nav;
     color: #fff;
 }
 
@@ -36,7 +39,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    background: #171731;
+    background: @nav;
 }
 
 nav ul li {
@@ -45,7 +48,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: @contenido;
     text-decoration: none;
     font-weight: light;
     padding: 10px;
@@ -55,7 +58,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a:focus {
-    background-color: #303064;
+    background-color: @principal-hover;
     border-radius: 5px;
 }
 
@@ -94,14 +97,12 @@ nav ul li:hover .dropdown {
 
 
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #171731;
 }
 
 .cont {
-    background-color: lightgray;
+    background-color: @highlight-background;
     padding: 100px;
     margin: 250px 500px 0 500px;
     border-radius: 20px;
@@ -112,18 +113,39 @@ body {
     z-index: 1;
 }
 
-.cont:hover {
-    background: linear-gradient(45deg, #171731, #2c2c6b);
-    color: #fff;
-    transform: scale(1.05);
-    box-shadow: 0px -20px 150px rgba(0, 78, 194, 0.274);
-}
-
 .cont h1 {
     position: relative;
     text-align: center;
-    margin-bottom: 1rem;
+    margin: 1.5rem;
+    color: @contenido-blanco;
 }
+
+.cont p{
+    margin: 10px;
+    text-align: center;
+    color: @contenido-blanco;
+
+}
+
+.cont h1,
+.cont p {
+    transition: color 0.3s ease;
+    color: @contenido-blanco;
+}
+
+.cont:hover h1,
+.cont:hover p {
+    color: @principal;
+}
+
+.cont:hover {
+    background: @card-about;
+    color: @principal;
+    transform: scale(1.05);
+    box-shadow: 0px -20px 150px rgba(255, 255, 255, 0.274);
+}
+
+
 
 .cont h1::after {
     content: '';
@@ -133,7 +155,7 @@ body {
     transform: translateX(-50%) scaleX(0);
     height: 4px;
     width: 80%;
-    background: linear-gradient(90deg, #0ac448, #1daa47);
+    background: @info-toggle;
     border-radius: 2px;
     transition: transform 0.3s ease;
 }
@@ -143,17 +165,9 @@ body {
 }
 
 
-
-
-.cont p{
-    margin: 10px;
-    text-align: center;
-
-}
-
 footer {
-    background-color: #171731;
-    color: #fff;
+    background-color: @background-footer;
+    color: @contenido;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -177,7 +191,7 @@ footer p {
     text-align: center;
     margin: 0 10px;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: @card-about;
     border-radius: 5px;
     font-weight: bold;
     margin-bottom: 100px;
@@ -186,7 +200,7 @@ footer p {
 .highlight:hover, .highlight:focus {
 
     transition: 0.5s;
-    background-color: #171731;
+    background-color: @principal;
     border-radius: 5px;
     color: #fff;
 
@@ -199,13 +213,13 @@ footer p {
     font-size: 16px;
     cursor: pointer;
     border: none;
-    background-color: #007BFF;
+    background-color: @info-toggle;
     color: white;
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .info-toggle-btn:hover, .info-toggle-btn:focus {
-    background-color: #0056b3;
+    background-color: @info-toggle-hover;
     transform: scale(1.05);
 }

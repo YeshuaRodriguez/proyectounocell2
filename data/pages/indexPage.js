@@ -1,22 +1,16 @@
 export const indexPage = {
     indexServices:[
         {
-            servicio: "Últimos Celulares",
-            servicioDesc: "Explora los modelos más recientes y avanzados en el mercado.",
-            imgSrc: "https://cdn-icons-png.flaticon.com/256/0/191.png",
+            servicio: "Misión",
+            servicioDesc: "Reducir la brecha digital en la niñez hondureña mediante la recolección y entrega de dispositivos móviles donados, facilitando el acceso a herramientas educativas y oportunidades de aprendizaje.",
+            imgSrc: "https://aluminiumindustries.com.au/wp-content/uploads/2023/10/Mission@4x-300x300.png",
             imgDesc: "Celulares"
         },
         {
-            servicio: "Accesorios",
-            servicioDesc: "Encuentra los mejores accesorios para tu dispositivo.",
-            imgSrc: "https://cdn-icons-png.flaticon.com/256/3205/3205414.png",
+            servicio: "Visión",
+            servicioDesc: "Ser un referente en inclusión digital infantil en Honduras, construyendo un futuro donde cada niño y niña tenga acceso igualitario a la tecnología y a una educación de calidad.",
+            imgSrc: "https://static.vecteezy.com/system/resources/thumbnails/014/475/656/small_2x/eye-icon-simple-flat-eye-design-vision-care-concept-wear-glasses-for-a-clear-vision-png.png",
             imgDesc: "Accesorios"
-        },
-        {
-            servicio: "Reparaciones",
-            servicioDesc: "Ofrecemos servicios de reparación para celulares, televisores y otros dispositivos, incluyendo estufas.",
-            imgSrc: "https://cdn-icons-png.flaticon.com/256/675/675507.png",
-            imgDesc: "Reparación"
         }
     ]
 }

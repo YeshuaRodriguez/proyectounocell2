@@ -1,24 +1,15 @@
-@principal: #171731;
-@principal-hover: #303064;
-@highlight-background: #f5f5f5;
-@highlight-background-hover: #dbdbdb;
-@contenido: #fff;
-@more-btn: #26883d;
-@mote-btn-hover: #254927;
-@hr: #b9b9b9;
-@instagram-btn: linear-gradient(to bottom right, #e600ff, #ffb300);
-@instagram-shadow: rgba(255, 0, 187, 0.589), 10px 10px 40px rgba(255, 174, 0, 0.564);
-@tiktok-btn: linear-gradient(to bottom right, #00eaff, #ff005d);
-@tiktok-shadow: rgba(0, 242, 255, 0.589), 10px 10px 40px rgba(255, 0, 136, 0.564);
-@facebook-btn: linear-gradient(to bottom right, #192677, #5732bb);
-@facebook-shadow: rgba(43, 0, 255, 0.589), 10px 10px 40px rgba(0, 47, 255, 0.564);
-@web-btn: linear-gradient(to bottom right, #52f678, #32bb96);
-@web-shadow: rgba(0, 255, 72, 0.589), 10px 10px 40px rgba(0, 255, 136, 0.564);
+@import "paleta.less";
 
 
 *{
 
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+body {
+
+    background-color: #1d1b22;
 
 }
 
@@ -29,7 +20,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: @principal;;
+    background-color: @principal;
     color: @contenido;
 }
 
@@ -44,11 +35,18 @@ nav ul {
     padding: 0;
     display: flex;
     background: @principal;
+    
 }
 
 nav ul li {
     position: relative;
-    margin: 0 15px;
+    margin: 0px 15px;
+}
+
+nav ul hr{
+
+    color: @contenido;
+
 }
 
 nav ul li a {
@@ -130,24 +128,28 @@ body {
 
     text-overflow: ellipsis;
     overflow: hidden;
+    color: @contenido-blanco;
+    font-size: 1.3rem;
+    padding: 10px;
 
 }
 
 .highlight:hover, .highlight:focus {
 
     transform: scale(1.02);
-    background-color: #dbdbdb;
+    background-color: @highlight-background-hover;
     border-radius: 50px;
 
 }
 
 .highlight h3 {
-    margin-top: 0;
+    color: @contenido;
+    font-size: 1.6rem;
 }
 
 
 footer {
-    background-color: @principal;
+    background-color: @background-footer;
     color: @contenido;
     display:flex;
     flex-direction: column;
@@ -189,7 +191,7 @@ footer p{
     z-index: 1;
     text-align: center;
     color: @contenido;
-    padding: 40px;
+    padding: 60px;
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 20px;
@@ -199,14 +201,18 @@ footer p{
 }
 
 .hero .hero-content h2 {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     margin: 0;
     margin-bottom: 0.5rem;
+    font-family: "Playfair", serif;
+    font-style: italic;
 }
 
 .hero .hero-content p {
     line-height: 2;
     margin-top: 0;
+    font-size: 1.2rem;
+    color: @contenido-blanco;
 }
 
 .hero .hero-content button {
@@ -222,6 +228,9 @@ footer p{
 .hero-content:hover{
 
     transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.062);
+    box-shadow: 0px 13px 32px -8px rgba(0, 0, 0, 0.664);
+
 
 }
 
@@ -237,8 +246,9 @@ justify-content: space-around;
     display: block; 
     margin: 0 auto;
     max-width: 250px;
-    height: auto;
-    padding: 50px;
+    height: 160px;
+    padding: 10px;
+    filter: brightness(10000);
 }
 
 .botones {
@@ -262,7 +272,7 @@ justify-content: space-around;
 
 .boton {
     background-color: @more-btn;
-    color: @contenido;
+    color: @contenido-blanco;
     border: none;
     padding: 20px;
     width: 100%;
@@ -344,7 +354,7 @@ justify-content: space-around;
 
 
 .boton:hover {
-    background-color: @mote-btn-hover;
+    background-color: @more-btn-hover;
     transform: scale(1.05);
     font-weight: bold;
     border-radius: 25px;
@@ -367,6 +377,14 @@ hr{
     margin-top: 100px;
 
 }
+
+ nav .hr-vertical {
+    width: 0.5px;
+    height: 30px; /* o lo que necesites */
+    justify-content: center;
+    margin: 0 1rem;
+    background-color: @highlight-background-hover;
+  }
 
 .mas{
 
@@ -391,7 +409,7 @@ hr{
 .buttons-section button {
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: @boton-redes;
     border: none;
     color: @contenido;
     border-radius: 30px;
@@ -474,7 +492,7 @@ h1{
     justify-content: center;
     text-align: center;
     margin: 40px;
-    color: @principal;
+    color: @titulos;
        
 
 
