@@ -1,216 +1,176 @@
+body{
+    .nscontainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .highlights {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            .highlight{
+        
+                width: 500px;
+                height: 500px;
+                border-radius: 20px;
+                background-color: @highlight-background;
+                text-align: center;
+                margin: 0 10px;
+                padding: 20px;
+                transition: 0.5s ease-in-out;
+                p{
+        
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    color: @contenido-blanco;
+                    font-size: 1.3rem;
+                    padding: 10px;
+                
+                }
+                &:focus {
+        
+                    transform: scale(1.02);
+                    background-color: @highlight-background-hover;
+                    border-radius: 50px;
+                
+                }
+                h3 {
+                    color: @contenido;
+                    font-size: 1.6rem;
+                }
+                img {
+                    display: block; 
+                    margin: 0 auto;
+                    max-width: 250px;
+                    height: 160px;
+                    padding: 10px;
+                    filter: brightness(10000);
+                }
+            }
+        }
+    }
+    .servicios-botones {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: repeat(3, 200px);
+        gap: 20px;
+        padding: 20px;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .servicios-boton {
+            background-color: @more-btn;
+            color: @contenido-blanco;
+            border: none;
+            padding: 20px;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-align: center;
+            border-radius: 15px;
+            background-image: url('https://www.nmas.com.mx/_next/image/?url=https%3A%2F%2Fstatic-live.nmas.com.mx%2Fnmas-news%2Fstyles%2Fcorte_16_9%2Fcloud-storage%2F2024-02%2Fatt-red-apagon-estados-unidos.jpg%3Fh%3D920929c4%26itok%3Dmxz3jUiY&w=1920&q=80');
+            background-size: 400px;
+            background-blend-mode: multiply;
+            transition: 0.2s ease-in-out;
+            &:hover {
+                background-color: @more-btn-hover;
+                transform: scale(1.05);
+                font-weight: bold;
+                border-radius: 25px;
+                font-size:x-large;
+            }
+            img{
 
-.highlights {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
+                display: none;
+            
+            }
+        }
+        .servicios-boton2{
 
-.highlights .highlight{
+            background-image: url('https://i.blogs.es/a1af9b/s23-ultra/1366_2000.jpeg');
+            background-size: 400px;
+            background-blend-mode: multiply;
+        
+        }
+        .servicios-boton3{
+        
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXUVXERm3yWgAa9s5uAIG2et2PtD1mM-1n6g&s');
+            background-size: 400px;
+            background-blend-mode: multiply;
+            
+        }
+        .servicios-boton4{
+        
+            background-image: url('https://erepublic.brightspotcdn.com/dims4/default/e0c0b96/2147483647/strip/true/crop/2800x1460+0+162/resize/840x438!/quality/90/?url=http%3A%2F%2Ferepublic-brightspot.s3.us-west-2.amazonaws.com%2F4c%2Ff7%2F16181df64dbb94a59cf768b1bda3%2Fcellphones.jpg');
+            background-blend-mode: multiply;
+            
+        }
+        .servicios-boton5{
+        
+            background-image: url('https://www.aut.ac.nz/__data/assets/image/0008/812861/children-with-cellphones-LBeddoe-forward-slash-shutterstock.com-1847575498.jpg');
+            background-size: 400px;
+            background-blend-mode: multiply;
+            
+        }
+        .servicios-boton6{
+        
+            background-image: url('https://cloudfront-us-east-1.images.arcpublishing.com/opb/5HBSCC4RBSTIIMOST52KYSCJHU.jpg');
+            background-size: 300px;
+            background-blend-mode: multiply;
+        
+        }
+        .servicios-boton7{
+        
+            background-image: url('https://static.vecteezy.com/system/resources/thumbnails/049/548/991/small_2x/man-on-sofa-watching-large-led-television-in-living-room-with-copy-space-for-text-photo.jpg');
+            background-size: 400px;
+            background-blend-mode: multiply;
+        
+        }
+        .servicios-boton8{
+        
+            background-image: url('https://www.rrhhdigital.com/wp-content/uploads/userfiles/tecnologia-ordenador-equipo-expertos.jpg');
+            background-size: 400px;
+            background-blend-mode: multiply;
+        
+        }
+        .servicios-boton9{
+        
+            background-image: url('https://st2.depositphotos.com/3396639/6920/i/450/depositphotos_69202539-stock-photo-mans-hands-using-smart-phone.jpg');
+            background-size: 400px;
+            background-blend-mode: multiply;
+        
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+    hr{
 
-    width: 500px;
-    height: 500px;
-    border-radius: 20px;
-    background-color: @highlight-background;
-    text-align: center;
-    margin: 0 10px;
-    padding: 20px;
-    transition: 0.5s ease-in-out;
-
-}
-
-.highlights .highlight p{
-
-    text-overflow: ellipsis;
-    overflow: hidden;
-    color: @contenido-blanco;
-    font-size: 1.3rem;
-    padding: 10px;
-
-}
-
-.highlight:hover, .highlight:focus {
-
-    transform: scale(1.02);
-    background-color: @highlight-background-hover;
-    border-radius: 50px;
-
-}
-
-.highlight h3 {
-    color: @contenido;
-    font-size: 1.6rem;
-}
-
-
-
-
-
-
-.nscontainer{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-}
-
-.highlight img {
-    display: block; 
-    margin: 0 auto;
-    max-width: 250px;
-    height: 160px;
-    padding: 10px;
-    filter: brightness(10000);
-}
-
-.servicios-botones {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(3, 200px);
-    grid-template-rows: repeat(3, 200px);
-    gap: 20px;
-    padding: 20px;
-}
-
-.servicios-botones ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.servicios-boton {
-    background-color: @more-btn;
-    color: @contenido-blanco;
-    border: none;
-    padding: 20px;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-align: center;
-    border-radius: 15px;
-    background-image: url('https://www.nmas.com.mx/_next/image/?url=https%3A%2F%2Fstatic-live.nmas.com.mx%2Fnmas-news%2Fstyles%2Fcorte_16_9%2Fcloud-storage%2F2024-02%2Fatt-red-apagon-estados-unidos.jpg%3Fh%3D920929c4%26itok%3Dmxz3jUiY&w=1920&q=80');
-    background-size: 400px;
-    background-blend-mode: multiply;
-    transition: 0.2s ease-in-out;
-}
-
-.servicios-boton2{
-
-    background-image: url('https://i.blogs.es/a1af9b/s23-ultra/1366_2000.jpeg');
-    background-size: 400px;
-    background-blend-mode: multiply;
-
-}
-
-.servicios-boton3{
-
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXUVXERm3yWgAa9s5uAIG2et2PtD1mM-1n6g&s');
-    background-size: 400px;
-    background-blend-mode: multiply;
+        border: @hr solid 1px;
+        width: 50%;
+        margin-top: 100px;
     
-}
+    }
+    .mas{
 
-.servicios-boton4{
-
-    background-image: url('https://erepublic.brightspotcdn.com/dims4/default/e0c0b96/2147483647/strip/true/crop/2800x1460+0+162/resize/840x438!/quality/90/?url=http%3A%2F%2Ferepublic-brightspot.s3.us-west-2.amazonaws.com%2F4c%2Ff7%2F16181df64dbb94a59cf768b1bda3%2Fcellphones.jpg');
-    background-blend-mode: multiply;
-    
-}
-
-.servicios-boton5{
-
-    background-image: url('https://www.aut.ac.nz/__data/assets/image/0008/812861/children-with-cellphones-LBeddoe-forward-slash-shutterstock.com-1847575498.jpg');
-    background-size: 400px;
-    background-blend-mode: multiply;
-    
-}
-
-.servicios-boton6{
-
-    background-image: url('https://cloudfront-us-east-1.images.arcpublishing.com/opb/5HBSCC4RBSTIIMOST52KYSCJHU.jpg');
-    background-size: 300px;
-    background-blend-mode: multiply;
-
-}
-
-.servicios-boton7{
-
-    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/049/548/991/small_2x/man-on-sofa-watching-large-led-television-in-living-room-with-copy-space-for-text-photo.jpg');
-    background-size: 400px;
-    background-blend-mode: multiply;
-
-}
-
-.servicios-boton8{
-
-    background-image: url('https://www.rrhhdigital.com/wp-content/uploads/userfiles/tecnologia-ordenador-equipo-expertos.jpg');
-    background-size: 400px;
-    background-blend-mode: multiply;
-
-}
-
-.servicios-boton9{
-
-    background-image: url('https://st2.depositphotos.com/3396639/6920/i/450/depositphotos_69202539-stock-photo-mans-hands-using-smart-phone.jpg');
-    background-size: 400px;
-    background-blend-mode: multiply;
-
-}
-
-
-.servicios-boton:hover {
-    background-color: @more-btn-hover;
-    transform: scale(1.05);
-    font-weight: bold;
-    border-radius: 25px;
-    font-size:x-large;
-}
-
-a {
-    text-decoration: none;
-}
-.servicios-boton img{
-
-    display: none;
-
-}
-
-hr{
-
-    border: @hr solid 1px;
-    width: 50%;
-    margin-top: 100px;
-
-}
-
- nav .hr-vertical {
-    width: 0.5px;
-    height: 30px; /* o lo que necesites */
-    justify-content: center;
-    margin: 0 1rem;
-    background-color: @highlight-background-hover;
-  }
-
-.mas{
-
- justify-content: center;
- text-align: center;
- margin: 40px;
- margin-top: 80px;
-
-}
-
-
-h1{
-    justify-content: center;
-    text-align: center;
-    margin: 40px;
-    color: @titulos;
+        justify-content: center;
+        text-align: center;
+        margin: 40px;
+        margin-top: 80px;
+    }
+    h1{
+        justify-content: center;
+        text-align: center;
+        margin: 40px;
+        color: @titulos;
+    }
 }

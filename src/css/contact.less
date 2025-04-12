@@ -1,7 +1,3 @@
-main {
-    flex: 1;
-}
-
 .contactSection {
     padding: 50px;
     margin: 20px;
@@ -15,12 +11,10 @@ main {
         color: @contenido-blanco;
     }
     h2{
-
         text-align: center;
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
-    color: @contenido;
-
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        color: @contenido;
     }
 }
 
@@ -39,43 +33,37 @@ form {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-}
-
-form label {
-    font-size: 1rem;
-    color: @contenido;
-}
-
-form input, form textarea {
-    width: 100%;
-    max-width: 500px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid @text-area;
-    font-size: 1rem;
-}
-
-form button {
-    padding: 1em 2em;
-    background-color: @form-button;
-    border: none;
-    color: @contenido-blanco;
-    border-radius: 1000px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-
-
-form button:hover {
-    z-index: 0;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    background-color: @form-button-hover;
-
-
+    label {
+        font-size: 1rem;
+        color: @contenido;
+    }
+    input, textarea {
+        width: 100%;
+        max-width: 500px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid @text-area;
+        font-size: 1rem;
+    }
+    button {
+        padding: 1em 2em;
+        background-color: @form-button;
+        border: none;
+        color: @contenido-blanco;
+        border-radius: 1000px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        &:hover {
+            z-index: 0;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            background-color: @form-button-hover;
+        
+        
+        }
+    }
 }
